@@ -18,7 +18,7 @@
  * Version details
  *
  * @package    block_google_hangout
- * @copyright  1999 onwards Martin Dougiamas (http://dougiamas.com)
+ * @copyright  @copyright Nadav Kavalerchik <nadavkav@gmail.com>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 

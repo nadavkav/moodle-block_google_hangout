@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_google_hangout', language 'en'
+ * Strings for component 'block_google_hangout', language 'he'
  *
  * @package   block_google_hangout
  * @copyright Nadav Kavalerchik <nadavkav@gmail.com>
@@ -31,6 +31,5 @@ $string['labelfoo'] = 'Config label';
 $string['google_hangout:addinstance'] = 'Add a google_hangout block';
 $string['google_hangout:myaddinstance'] = 'Add a google_hangout block to my moodle';
 $string['pluginname'] = 'Google Hangout';
-$string['starthangoutwithfollowing'] = 'The following users will be emailed to join the Hangout';
-$string['starthangoutsession'] = 'Click the "Google Hangout" button to start a new session';
-
+$string['starthangoutwithfollowing'] = 'הזמנת הצטרפות למפגש המקוון תשלח לדוא"ל של התלמידים הבאים:';
+$string['starthangoutsession'] = 'הקליקו על כפתור ה"Google Hangout" להתחלת המפגש המקוון';

@@ -18,7 +18,7 @@
  * google_hangout block caps.
  *
  * @package    block_google_hangout
- * @copyright  Daniel Neis <danielneis@gmail.com>
+ * @copyright  @copyright Nadav Kavalerchik <nadavkav@gmail.com>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -48,6 +48,7 @@ class selectusers_to_hanghout_with_form extends moodleform {
         $context = context_course::instance($courseid);
 
         $mform->addElement('hidden', 'courseid', $courseid);
+        $mform->setType('courseid', PARAM_INT);
 
         $users = get_enrolled_users($context);
         foreach ($users as $user) {
@@ -88,12 +89,15 @@ $PAGE->set_title(get_string('pluginname', 'block_google_hangout'));
 $PAGE->set_heading(format_string($COURSE->fullname));
 $PAGE->navbar->add(format_string($COURSE->fullname), new moodle_url('/course/view.php', array('id'=>$courseid)));
 $PAGE->navbar->add(get_string('pluginname', 'block_google_hangout'));
+$PAGE->set_url(new moodle_url('/course/view.php', array('id'=>$courseid)));
 
 echo $OUTPUT->header() ; //  header();
 
 echo html_writer::start_tag('div', array('class' => 'no-overflow'));
-if ($hangout_button) {
-    echo "The following users will be emailed to join the Hangout<br>".$userslist;
+if (isset($hangout_button)) {
+    echo html_writer::tag('h2', get_string('starthangoutwithfollowing', 'block_google_hangout'));
+    echo $userslist."<br>";
+    echo html_writer::tag('h4', get_string('starthangoutsession', 'block_google_hangout'));
     echo $hangout_button;
 } else {
     $form->display();

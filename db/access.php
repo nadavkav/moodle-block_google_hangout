@@ -18,7 +18,7 @@
  * Newblock block caps.
  *
  * @package   block_google_hangout
- * @copyright Daniel Neis <danielneis@gmail.com>
+ * @copyright Nadav Kavalerchik <nadavkav@gmail.com>
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
